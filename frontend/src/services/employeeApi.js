@@ -10,6 +10,23 @@ const api = axios.create({
   },
 });
 
+// Helper to extract error message from API response or network error
+const getErrorMessage = (error, defaultMessage) => {
+  // Handle API response errors
+  if (error.response?.data?.error) {
+    return error.response.data.error;
+  }
+  // Handle network errors
+  if (error.message === 'Network Error') {
+    return 'Network error. Please check if the server is running.';
+  }
+  // Handle connection refused
+  if (error.code === 'ECONNREFUSED') {
+    return 'Cannot connect to server. Please ensure backend is running on http://localhost:5000';
+  }
+  return defaultMessage;
+};
+
 // GET all employees with optional search and department filters
 export const getEmployees = async (search = '', department = '') => {
   try {
@@ -20,7 +37,7 @@ export const getEmployees = async (search = '', department = '') => {
     const response = await api.get('/employees', { params });
     return response.data.data;
   } catch (error) {
-    throw error.response?.data?.error || 'Failed to fetch employees';
+    throw getErrorMessage(error, 'Failed to fetch employees');
   }
 };
 
@@ -30,7 +47,7 @@ export const getEmployeeById = async (id) => {
     const response = await api.get(`/employees/${id}`);
     return response.data.data;
   } catch (error) {
-    throw error.response?.data?.error || 'Failed to fetch employee';
+    throw getErrorMessage(error, 'Failed to fetch employee');
   }
 };
 
@@ -40,7 +57,7 @@ export const createEmployee = async (employeeData) => {
     const response = await api.post('/employees', employeeData);
     return response.data.data;
   } catch (error) {
-    throw error.response?.data?.error || 'Failed to create employee';
+    throw getErrorMessage(error, 'Failed to create employee');
   }
 };
 
@@ -50,7 +67,7 @@ export const updateEmployee = async (id, employeeData) => {
     const response = await api.put(`/employees/${id}`, employeeData);
     return response.data;
   } catch (error) {
-    throw error.response?.data?.error || 'Failed to update employee';
+    throw getErrorMessage(error, 'Failed to update employee');
   }
 };
 
@@ -60,7 +77,7 @@ export const deleteEmployee = async (id) => {
     const response = await api.delete(`/employees/${id}`);
     return response.data;
   } catch (error) {
-    throw error.response?.data?.error || 'Failed to delete employee';
+    throw getErrorMessage(error, 'Failed to delete employee');
   }
 };
 
