@@ -553,6 +553,54 @@ Potential enhancements for future versions:
 - **Calendar Integration**: Schedule management, time-off tracking
 - **API Documentation**: Auto-generated API docs (Swagger/OpenAPI)
 
+## Testing
+
+### Running Tests
+
+**Backend Tests:**
+```bash
+cd backend
+npm test
+```
+
+Expected output:
+```
+PASS  src/__tests__/employees.test.js
+  Employee API - POST /api/employees
+    √ should reject POST request with missing required field (name)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+```
+
+**Frontend Tests:**
+```bash
+cd frontend
+npm test
+```
+
+Expected output:
+```
+PASS src/components/EmployeeForm.test.js
+  EmployeeForm Component
+    √ should display validation error when form is submitted empty
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+```
+
+### Test Coverage
+
+**Backend** (`backend/src/__tests__/employees.test.js`):
+- Tests POST /api/employees endpoint
+- Validates that missing required field (name) returns 400 error
+- Ensures validation works correctly
+
+**Frontend** (`frontend/src/components/EmployeeForm.test.js`):
+- Tests EmployeeForm component
+- Validates that submitting empty form shows "Name is required" error
+- Ensures client-side validation works correctly
+
 ## Troubleshooting
 
 ### Backend won't start
