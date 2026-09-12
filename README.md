@@ -79,9 +79,7 @@ employee-resource-directory/
 │   ├── PHASE-1.md               # Project setup documentation
 │   ├── PHASE-2.md               # Backend API documentation
 │   ├── PHASE-3.md               # Frontend implementation
-│   ├── PHASE-4.md               # Integration testing
-│   ├── PHASE-5.md               # Automated testing
-│   ├── PHASE-6.md               # Documentation & cleanup
+│   ├── PHASE-4.md               # Integration & edge cases
 │   └── postman/
 │       └── GTT_Employee_Resource_Directory_API.postman_collection.json
 │
