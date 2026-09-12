@@ -27,6 +27,7 @@ Employee Resource Directory is a full-stack web application for managing employe
 - ✓ **Loading States** - User feedback during data fetching
 - ✓ **Error Handling** - User-friendly error messages with retry capability
 - ✓ **Empty States** - Clear messaging when no data is available
+- ✓ **Automated Testing** - 1 backend + 1 frontend test (both passing)
 
 ## Project Structure
 

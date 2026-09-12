@@ -10,7 +10,7 @@ Complete guide to all documentation in the Employee Resource Directory project.
 **Contains**:
 - Project overview
 - Tech stack
-- 12 core features
+- 13 core features (including testing)
 - Project structure
 - Prerequisites
 - Database setup
@@ -18,6 +18,7 @@ Complete guide to all documentation in the Employee Resource Directory project.
 - Backend/frontend setup instructions
 - Running the application
 - Complete API endpoint documentation with examples
+- Testing documentation (1 backend + 1 frontend test)
 - Validation rules
 - Assumptions
 - Known limitations
@@ -297,9 +298,11 @@ employee-resource-directory/
 4. Source code in backend/src and frontend/src
 
 ### QA/Tester
-1. README.md (Features & Troubleshooting)
+1. README.md (Features & Testing & Troubleshooting)
 2. docs/postman/ (API testing)
 3. SUBMISSION_CHECKLIST.md (Test coverage)
+4. backend/src/__tests__/ (Backend test code)
+5. frontend/src/components/*.test.js (Frontend test code)
 
 ---
 
@@ -336,7 +339,7 @@ employee-resource-directory/
 - [x] Known limitations
 - [x] Future improvements
 - [x] Code structure
-- [x] Testing guide
+- [x] Automated testing (1 backend + 1 frontend)
 - [x] Submission verification
 
 ---
@@ -355,5 +358,5 @@ For questions about specific topics:
 ---
 
 *Last Updated: September 12, 2026*
-*Documentation Version: 1.0*
-*Project Status: Complete & Ready for Submission*
+*Documentation Version: 1.1*
+*Project Status: Complete with Automated Tests & Ready for Submission*
