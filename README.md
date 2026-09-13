@@ -15,22 +15,22 @@ Employee Resource Directory is a full-stack web application for managing employe
 ## Screenshots
 
 ### Dashboard
-![Dashboard](./screenshot/Dashboard.png)
+<img width="1919" height="1036" alt="image" src="https://github.com/user-attachments/assets/464beae2-08d6-4756-9e0b-99d830ae5d40" />
 
 ### Search & Filter
-![Search](./screenshot/Search.png)
+<img width="1919" height="384" alt="image" src="https://github.com/user-attachments/assets/47ac4c7f-50ff-4d15-a87e-e1cb5cee51fc" />
 
 ### Add Employee
-![Add Employee](./screenshot/Add_Employee.png)
+<img width="1919" height="1041" alt="image" src="https://github.com/user-attachments/assets/b1588ee8-b2ba-47f4-95a7-6ed8fd410033" />
 
 ### Update Employee
-![Update Employee](./screenshot/Update.png)
+<img width="1919" height="1041" alt="image" src="https://github.com/user-attachments/assets/8ca91364-29c5-44ba-a243-1ee3abf1848a" />
 
 ### Postman - GET Request
-![Postman GET](./screenshot/Postman_Get.png)
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/0875dfb0-53e9-48c4-98cf-cee046e50dad" />
 
 ### Postman - POST Request
-![Postman POST](./screenshot/Postman_Post.png)
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/ba37a8da-e0fd-4681-b97e-5713f8ccbae0" />
 
 ## Features
 
